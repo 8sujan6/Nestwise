@@ -1,0 +1,1402 @@
+[
+  {
+    "propertyId": "PROP-0001",
+    "fiveYearGrowthPercent": 41.8,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0002",
+    "fiveYearGrowthPercent": 33.3,
+    "averageAnnualGrowthPercent": 6.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0003",
+    "fiveYearGrowthPercent": 38.9,
+    "averageAnnualGrowthPercent": 7.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0004",
+    "fiveYearGrowthPercent": 42.6,
+    "averageAnnualGrowthPercent": 8.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0005",
+    "fiveYearGrowthPercent": 41.6,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0006",
+    "fiveYearGrowthPercent": 40.6,
+    "averageAnnualGrowthPercent": 8.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0007",
+    "fiveYearGrowthPercent": 40.8,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0008",
+    "fiveYearGrowthPercent": 40.1,
+    "averageAnnualGrowthPercent": 8.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0009",
+    "fiveYearGrowthPercent": 44.6,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0010",
+    "fiveYearGrowthPercent": 42.7,
+    "averageAnnualGrowthPercent": 8.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0011",
+    "fiveYearGrowthPercent": 31.7,
+    "averageAnnualGrowthPercent": 6.3,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0012",
+    "fiveYearGrowthPercent": 44.3,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0013",
+    "fiveYearGrowthPercent": 43.9,
+    "averageAnnualGrowthPercent": 8.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0014",
+    "fiveYearGrowthPercent": 39.5,
+    "averageAnnualGrowthPercent": 7.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0015",
+    "fiveYearGrowthPercent": 38.3,
+    "averageAnnualGrowthPercent": 7.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0016",
+    "fiveYearGrowthPercent": 44.0,
+    "averageAnnualGrowthPercent": 8.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0017",
+    "fiveYearGrowthPercent": 34.8,
+    "averageAnnualGrowthPercent": 7.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0018",
+    "fiveYearGrowthPercent": 33.3,
+    "averageAnnualGrowthPercent": 6.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0019",
+    "fiveYearGrowthPercent": 40.4,
+    "averageAnnualGrowthPercent": 8.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0020",
+    "fiveYearGrowthPercent": 41.8,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0021",
+    "fiveYearGrowthPercent": 42.3,
+    "averageAnnualGrowthPercent": 8.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0022",
+    "fiveYearGrowthPercent": 39.4,
+    "averageAnnualGrowthPercent": 7.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0023",
+    "fiveYearGrowthPercent": 39.1,
+    "averageAnnualGrowthPercent": 7.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0024",
+    "fiveYearGrowthPercent": 32.5,
+    "averageAnnualGrowthPercent": 6.5,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0025",
+    "fiveYearGrowthPercent": 42.2,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0026",
+    "fiveYearGrowthPercent": 34.6,
+    "averageAnnualGrowthPercent": 6.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0027",
+    "fiveYearGrowthPercent": 43.9,
+    "averageAnnualGrowthPercent": 8.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0028",
+    "fiveYearGrowthPercent": 43.5,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0029",
+    "fiveYearGrowthPercent": 44.4,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0030",
+    "fiveYearGrowthPercent": 35.6,
+    "averageAnnualGrowthPercent": 7.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0031",
+    "fiveYearGrowthPercent": 36.7,
+    "averageAnnualGrowthPercent": 7.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0032",
+    "fiveYearGrowthPercent": 42.5,
+    "averageAnnualGrowthPercent": 8.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0033",
+    "fiveYearGrowthPercent": 43.2,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0034",
+    "fiveYearGrowthPercent": 39.6,
+    "averageAnnualGrowthPercent": 7.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0035",
+    "fiveYearGrowthPercent": 31.2,
+    "averageAnnualGrowthPercent": 6.2,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0036",
+    "fiveYearGrowthPercent": 32.7,
+    "averageAnnualGrowthPercent": 6.5,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0037",
+    "fiveYearGrowthPercent": 41.9,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0038",
+    "fiveYearGrowthPercent": 43.0,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0039",
+    "fiveYearGrowthPercent": 33.9,
+    "averageAnnualGrowthPercent": 6.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0040",
+    "fiveYearGrowthPercent": 42.8,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0041",
+    "fiveYearGrowthPercent": 31.6,
+    "averageAnnualGrowthPercent": 6.3,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0042",
+    "fiveYearGrowthPercent": 34.8,
+    "averageAnnualGrowthPercent": 7.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0043",
+    "fiveYearGrowthPercent": 38.0,
+    "averageAnnualGrowthPercent": 7.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0044",
+    "fiveYearGrowthPercent": 36.6,
+    "averageAnnualGrowthPercent": 7.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0045",
+    "fiveYearGrowthPercent": 36.2,
+    "averageAnnualGrowthPercent": 7.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0046",
+    "fiveYearGrowthPercent": 45.4,
+    "averageAnnualGrowthPercent": 9.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0047",
+    "fiveYearGrowthPercent": 46.1,
+    "averageAnnualGrowthPercent": 9.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0048",
+    "fiveYearGrowthPercent": 37.2,
+    "averageAnnualGrowthPercent": 7.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0049",
+    "fiveYearGrowthPercent": 39.2,
+    "averageAnnualGrowthPercent": 7.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0050",
+    "fiveYearGrowthPercent": 43.1,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0051",
+    "fiveYearGrowthPercent": 45.6,
+    "averageAnnualGrowthPercent": 9.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0052",
+    "fiveYearGrowthPercent": 35.6,
+    "averageAnnualGrowthPercent": 7.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0053",
+    "fiveYearGrowthPercent": 47.5,
+    "averageAnnualGrowthPercent": 9.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0054",
+    "fiveYearGrowthPercent": 35.6,
+    "averageAnnualGrowthPercent": 7.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0055",
+    "fiveYearGrowthPercent": 35.4,
+    "averageAnnualGrowthPercent": 7.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0056",
+    "fiveYearGrowthPercent": 42.1,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0057",
+    "fiveYearGrowthPercent": 36.3,
+    "averageAnnualGrowthPercent": 7.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0058",
+    "fiveYearGrowthPercent": 35.6,
+    "averageAnnualGrowthPercent": 7.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0059",
+    "fiveYearGrowthPercent": 44.6,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0060",
+    "fiveYearGrowthPercent": 36.5,
+    "averageAnnualGrowthPercent": 7.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0061",
+    "fiveYearGrowthPercent": 45.3,
+    "averageAnnualGrowthPercent": 9.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0062",
+    "fiveYearGrowthPercent": 41.6,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0063",
+    "fiveYearGrowthPercent": 46.3,
+    "averageAnnualGrowthPercent": 9.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0064",
+    "fiveYearGrowthPercent": 41.2,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0065",
+    "fiveYearGrowthPercent": 42.4,
+    "averageAnnualGrowthPercent": 8.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0066",
+    "fiveYearGrowthPercent": 34.1,
+    "averageAnnualGrowthPercent": 6.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0067",
+    "fiveYearGrowthPercent": 39.8,
+    "averageAnnualGrowthPercent": 8.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0068",
+    "fiveYearGrowthPercent": 36.0,
+    "averageAnnualGrowthPercent": 7.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0069",
+    "fiveYearGrowthPercent": 38.3,
+    "averageAnnualGrowthPercent": 7.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0070",
+    "fiveYearGrowthPercent": 48.1,
+    "averageAnnualGrowthPercent": 9.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0071",
+    "fiveYearGrowthPercent": 38.3,
+    "averageAnnualGrowthPercent": 7.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0072",
+    "fiveYearGrowthPercent": 36.9,
+    "averageAnnualGrowthPercent": 7.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0073",
+    "fiveYearGrowthPercent": 46.3,
+    "averageAnnualGrowthPercent": 9.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0074",
+    "fiveYearGrowthPercent": 36.8,
+    "averageAnnualGrowthPercent": 7.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0075",
+    "fiveYearGrowthPercent": 39.9,
+    "averageAnnualGrowthPercent": 8.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0076",
+    "fiveYearGrowthPercent": 31.7,
+    "averageAnnualGrowthPercent": 6.3,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0077",
+    "fiveYearGrowthPercent": 41.7,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0078",
+    "fiveYearGrowthPercent": 37.1,
+    "averageAnnualGrowthPercent": 7.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0079",
+    "fiveYearGrowthPercent": 44.7,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0080",
+    "fiveYearGrowthPercent": 32.5,
+    "averageAnnualGrowthPercent": 6.5,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0081",
+    "fiveYearGrowthPercent": 44.3,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0082",
+    "fiveYearGrowthPercent": 41.4,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0083",
+    "fiveYearGrowthPercent": 46.6,
+    "averageAnnualGrowthPercent": 9.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0084",
+    "fiveYearGrowthPercent": 41.1,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0085",
+    "fiveYearGrowthPercent": 45.2,
+    "averageAnnualGrowthPercent": 9.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0086",
+    "fiveYearGrowthPercent": 43.6,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0087",
+    "fiveYearGrowthPercent": 32.1,
+    "averageAnnualGrowthPercent": 6.4,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0088",
+    "fiveYearGrowthPercent": 41.1,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0089",
+    "fiveYearGrowthPercent": 45.7,
+    "averageAnnualGrowthPercent": 9.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0090",
+    "fiveYearGrowthPercent": 40.9,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0091",
+    "fiveYearGrowthPercent": 43.1,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0092",
+    "fiveYearGrowthPercent": 37.9,
+    "averageAnnualGrowthPercent": 7.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0093",
+    "fiveYearGrowthPercent": 43.4,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0094",
+    "fiveYearGrowthPercent": 44.6,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0095",
+    "fiveYearGrowthPercent": 31.0,
+    "averageAnnualGrowthPercent": 6.2,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0096",
+    "fiveYearGrowthPercent": 45.5,
+    "averageAnnualGrowthPercent": 9.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0097",
+    "fiveYearGrowthPercent": 40.3,
+    "averageAnnualGrowthPercent": 8.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0098",
+    "fiveYearGrowthPercent": 42.6,
+    "averageAnnualGrowthPercent": 8.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0099",
+    "fiveYearGrowthPercent": 38.5,
+    "averageAnnualGrowthPercent": 7.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0100",
+    "fiveYearGrowthPercent": 37.9,
+    "averageAnnualGrowthPercent": 7.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0101",
+    "fiveYearGrowthPercent": 43.4,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0102",
+    "fiveYearGrowthPercent": 45.2,
+    "averageAnnualGrowthPercent": 9.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0103",
+    "fiveYearGrowthPercent": 39.7,
+    "averageAnnualGrowthPercent": 7.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0104",
+    "fiveYearGrowthPercent": 39.9,
+    "averageAnnualGrowthPercent": 8.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0105",
+    "fiveYearGrowthPercent": 40.9,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0106",
+    "fiveYearGrowthPercent": 32.6,
+    "averageAnnualGrowthPercent": 6.5,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0107",
+    "fiveYearGrowthPercent": 39.4,
+    "averageAnnualGrowthPercent": 7.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0108",
+    "fiveYearGrowthPercent": 45.6,
+    "averageAnnualGrowthPercent": 9.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0109",
+    "fiveYearGrowthPercent": 40.5,
+    "averageAnnualGrowthPercent": 8.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0110",
+    "fiveYearGrowthPercent": 43.4,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0111",
+    "fiveYearGrowthPercent": 35.1,
+    "averageAnnualGrowthPercent": 7.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0112",
+    "fiveYearGrowthPercent": 41.4,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0113",
+    "fiveYearGrowthPercent": 45.0,
+    "averageAnnualGrowthPercent": 9.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0114",
+    "fiveYearGrowthPercent": 33.3,
+    "averageAnnualGrowthPercent": 6.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0115",
+    "fiveYearGrowthPercent": 34.4,
+    "averageAnnualGrowthPercent": 6.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0116",
+    "fiveYearGrowthPercent": 37.6,
+    "averageAnnualGrowthPercent": 7.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0117",
+    "fiveYearGrowthPercent": 45.2,
+    "averageAnnualGrowthPercent": 9.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0118",
+    "fiveYearGrowthPercent": 41.8,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0119",
+    "fiveYearGrowthPercent": 38.0,
+    "averageAnnualGrowthPercent": 7.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0120",
+    "fiveYearGrowthPercent": 41.1,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0121",
+    "fiveYearGrowthPercent": 40.1,
+    "averageAnnualGrowthPercent": 8.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0122",
+    "fiveYearGrowthPercent": 43.1,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0123",
+    "fiveYearGrowthPercent": 48.9,
+    "averageAnnualGrowthPercent": 9.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0124",
+    "fiveYearGrowthPercent": 41.0,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0125",
+    "fiveYearGrowthPercent": 28.3,
+    "averageAnnualGrowthPercent": 5.7,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0126",
+    "fiveYearGrowthPercent": 43.2,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0127",
+    "fiveYearGrowthPercent": 39.6,
+    "averageAnnualGrowthPercent": 7.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0128",
+    "fiveYearGrowthPercent": 32.9,
+    "averageAnnualGrowthPercent": 6.6,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0129",
+    "fiveYearGrowthPercent": 38.1,
+    "averageAnnualGrowthPercent": 7.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0130",
+    "fiveYearGrowthPercent": 43.6,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0131",
+    "fiveYearGrowthPercent": 35.2,
+    "averageAnnualGrowthPercent": 7.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0132",
+    "fiveYearGrowthPercent": 38.9,
+    "averageAnnualGrowthPercent": 7.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0133",
+    "fiveYearGrowthPercent": 45.3,
+    "averageAnnualGrowthPercent": 9.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0134",
+    "fiveYearGrowthPercent": 34.7,
+    "averageAnnualGrowthPercent": 6.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0135",
+    "fiveYearGrowthPercent": 42.8,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0136",
+    "fiveYearGrowthPercent": 30.6,
+    "averageAnnualGrowthPercent": 6.1,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0137",
+    "fiveYearGrowthPercent": 41.3,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0138",
+    "fiveYearGrowthPercent": 36.6,
+    "averageAnnualGrowthPercent": 7.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0139",
+    "fiveYearGrowthPercent": 40.1,
+    "averageAnnualGrowthPercent": 8.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0140",
+    "fiveYearGrowthPercent": 41.9,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0141",
+    "fiveYearGrowthPercent": 34.6,
+    "averageAnnualGrowthPercent": 6.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0142",
+    "fiveYearGrowthPercent": 27.4,
+    "averageAnnualGrowthPercent": 5.5,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0143",
+    "fiveYearGrowthPercent": 44.4,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0144",
+    "fiveYearGrowthPercent": 35.9,
+    "averageAnnualGrowthPercent": 7.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0145",
+    "fiveYearGrowthPercent": 38.1,
+    "averageAnnualGrowthPercent": 7.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0146",
+    "fiveYearGrowthPercent": 38.0,
+    "averageAnnualGrowthPercent": 7.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0147",
+    "fiveYearGrowthPercent": 45.1,
+    "averageAnnualGrowthPercent": 9.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0148",
+    "fiveYearGrowthPercent": 43.7,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0149",
+    "fiveYearGrowthPercent": 44.6,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0150",
+    "fiveYearGrowthPercent": 43.4,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0151",
+    "fiveYearGrowthPercent": 42.8,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0152",
+    "fiveYearGrowthPercent": 40.8,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0153",
+    "fiveYearGrowthPercent": 45.3,
+    "averageAnnualGrowthPercent": 9.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0154",
+    "fiveYearGrowthPercent": 35.8,
+    "averageAnnualGrowthPercent": 7.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0155",
+    "fiveYearGrowthPercent": 38.7,
+    "averageAnnualGrowthPercent": 7.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0156",
+    "fiveYearGrowthPercent": 34.8,
+    "averageAnnualGrowthPercent": 7.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0157",
+    "fiveYearGrowthPercent": 38.3,
+    "averageAnnualGrowthPercent": 7.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0158",
+    "fiveYearGrowthPercent": 42.4,
+    "averageAnnualGrowthPercent": 8.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0159",
+    "fiveYearGrowthPercent": 36.8,
+    "averageAnnualGrowthPercent": 7.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0160",
+    "fiveYearGrowthPercent": 41.5,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0161",
+    "fiveYearGrowthPercent": 37.8,
+    "averageAnnualGrowthPercent": 7.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0162",
+    "fiveYearGrowthPercent": 42.2,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0163",
+    "fiveYearGrowthPercent": 35.8,
+    "averageAnnualGrowthPercent": 7.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0164",
+    "fiveYearGrowthPercent": 40.5,
+    "averageAnnualGrowthPercent": 8.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0165",
+    "fiveYearGrowthPercent": 43.5,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0166",
+    "fiveYearGrowthPercent": 42.7,
+    "averageAnnualGrowthPercent": 8.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0167",
+    "fiveYearGrowthPercent": 34.5,
+    "averageAnnualGrowthPercent": 6.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0168",
+    "fiveYearGrowthPercent": 36.0,
+    "averageAnnualGrowthPercent": 7.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0169",
+    "fiveYearGrowthPercent": 36.6,
+    "averageAnnualGrowthPercent": 7.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0170",
+    "fiveYearGrowthPercent": 43.8,
+    "averageAnnualGrowthPercent": 8.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0171",
+    "fiveYearGrowthPercent": 46.4,
+    "averageAnnualGrowthPercent": 9.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0172",
+    "fiveYearGrowthPercent": 34.8,
+    "averageAnnualGrowthPercent": 7.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0173",
+    "fiveYearGrowthPercent": 41.8,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0174",
+    "fiveYearGrowthPercent": 43.1,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0175",
+    "fiveYearGrowthPercent": 44.0,
+    "averageAnnualGrowthPercent": 8.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0176",
+    "fiveYearGrowthPercent": 44.2,
+    "averageAnnualGrowthPercent": 8.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0177",
+    "fiveYearGrowthPercent": 42.2,
+    "averageAnnualGrowthPercent": 8.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0178",
+    "fiveYearGrowthPercent": 40.3,
+    "averageAnnualGrowthPercent": 8.1,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0179",
+    "fiveYearGrowthPercent": 41.7,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0180",
+    "fiveYearGrowthPercent": 43.8,
+    "averageAnnualGrowthPercent": 8.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0181",
+    "fiveYearGrowthPercent": 43.6,
+    "averageAnnualGrowthPercent": 8.7,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0182",
+    "fiveYearGrowthPercent": 37.3,
+    "averageAnnualGrowthPercent": 7.5,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0183",
+    "fiveYearGrowthPercent": 42.8,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0184",
+    "fiveYearGrowthPercent": 39.9,
+    "averageAnnualGrowthPercent": 8.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0185",
+    "fiveYearGrowthPercent": 46.0,
+    "averageAnnualGrowthPercent": 9.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0186",
+    "fiveYearGrowthPercent": 38.8,
+    "averageAnnualGrowthPercent": 7.8,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0187",
+    "fiveYearGrowthPercent": 31.9,
+    "averageAnnualGrowthPercent": 6.4,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0188",
+    "fiveYearGrowthPercent": 34.6,
+    "averageAnnualGrowthPercent": 6.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0189",
+    "fiveYearGrowthPercent": 44.9,
+    "averageAnnualGrowthPercent": 9.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0190",
+    "fiveYearGrowthPercent": 32.4,
+    "averageAnnualGrowthPercent": 6.5,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0191",
+    "fiveYearGrowthPercent": 45.0,
+    "averageAnnualGrowthPercent": 9.0,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0192",
+    "fiveYearGrowthPercent": 27.1,
+    "averageAnnualGrowthPercent": 5.4,
+    "trend": "Moderate",
+    "investmentRating": "Medium"
+  },
+  {
+    "propertyId": "PROP-0193",
+    "fiveYearGrowthPercent": 41.1,
+    "averageAnnualGrowthPercent": 8.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0194",
+    "fiveYearGrowthPercent": 34.4,
+    "averageAnnualGrowthPercent": 6.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0195",
+    "fiveYearGrowthPercent": 45.8,
+    "averageAnnualGrowthPercent": 9.2,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0196",
+    "fiveYearGrowthPercent": 43.2,
+    "averageAnnualGrowthPercent": 8.6,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0197",
+    "fiveYearGrowthPercent": 37.2,
+    "averageAnnualGrowthPercent": 7.4,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0198",
+    "fiveYearGrowthPercent": 39.7,
+    "averageAnnualGrowthPercent": 7.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0199",
+    "fiveYearGrowthPercent": 44.4,
+    "averageAnnualGrowthPercent": 8.9,
+    "trend": "Strong",
+    "investmentRating": "High"
+  },
+  {
+    "propertyId": "PROP-0200",
+    "fiveYearGrowthPercent": 41.4,
+    "averageAnnualGrowthPercent": 8.3,
+    "trend": "Strong",
+    "investmentRating": "High"
+  }
+]

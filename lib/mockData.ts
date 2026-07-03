@@ -5,171 +5,127 @@ import {
   PriceHistoryResult,
 } from "./types";
 
-// ─── Mock Property Listings ───────────────────────────────────────────────────
+import propertiesData from "../mock_data/properties.json";
+import neighborhoodsData from "../mock_data/neighborhoods.json";
+import commuteData from "../mock_data/commute.json";
+import priceHistoryData from "../mock_data/price-history.json";
 
-export const MOCK_LISTINGS: PropertyListing[] = [
-  {
-    id: "prop_001",
-    address: "4821 Maple Grove Dr, Austin, TX 78701",
-    price: 485000,
-    bedrooms: 3,
-    bathrooms: 2,
-    squareFeet: 1850,
-    imageUrl:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80",
-    propertyType: "Single Family",
-  },
-  {
-    id: "prop_002",
-    address: "2210 Riverside Blvd, Austin, TX 78703",
-    price: 620000,
-    bedrooms: 4,
-    bathrooms: 3,
-    squareFeet: 2400,
-    imageUrl:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",
-    propertyType: "Single Family",
-  },
-  {
-    id: "prop_003",
-    address: "890 Lakeview Ct, Austin, TX 78735",
-    price: 395000,
-    bedrooms: 2,
-    bathrooms: 2,
-    squareFeet: 1320,
-    imageUrl:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80",
-    propertyType: "Condo",
-  },
-  {
-    id: "prop_004",
-    address: "3344 Cedar Ridge Ln, Austin, TX 78745",
-    price: 540000,
-    bedrooms: 3,
-    bathrooms: 2,
-    squareFeet: 1975,
-    imageUrl:
-      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=600&q=80",
-    propertyType: "Single Family",
-  },
-  {
-    id: "prop_005",
-    address: "7102 Sunset Hills Rd, Austin, TX 78759",
-    price: 710000,
-    bedrooms: 4,
-    bathrooms: 3,
-    squareFeet: 2800,
-    imageUrl:
-      "https://images.unsplash.com/photo-1575517111478-7f6afd0973db?w=600&q=80",
-    propertyType: "Single Family",
-  },
-];
+const MOCK_LISTINGS = propertiesData as PropertyListing[];
+const NEIGHBORHOOD_DATA = neighborhoodsData as NeighborhoodInfo[];
+const COMMUTE_DATA = commuteData as CommuteTimeResult[];
+const PRICE_HISTORY_DATA = priceHistoryData as PriceHistoryResult[];
 
-// ─── Mock Neighborhood Info ───────────────────────────────────────────────────
-
-const NEIGHBORHOOD_DATA: Record<string, NeighborhoodInfo> = {
-  prop_001: {
-    schoolRating: 9,
-    crimeLevel: "Low",
-    walkabilityScore: 72,
-    nearbyParks: 4,
-    groceryStores: 3,
-  },
-  prop_002: {
-    schoolRating: 8,
-    crimeLevel: "Low",
-    walkabilityScore: 85,
-    nearbyParks: 6,
-    groceryStores: 5,
-  },
-  prop_003: {
-    schoolRating: 6,
-    crimeLevel: "Moderate",
-    walkabilityScore: 91,
-    nearbyParks: 2,
-    groceryStores: 7,
-  },
-  prop_004: {
-    schoolRating: 7,
-    crimeLevel: "Low",
-    walkabilityScore: 65,
-    nearbyParks: 3,
-    groceryStores: 2,
-  },
-  prop_005: {
-    schoolRating: 9,
-    crimeLevel: "Low",
-    walkabilityScore: 58,
-    nearbyParks: 5,
-    groceryStores: 4,
-  },
-};
-
-// ─── Mock Commute Times ───────────────────────────────────────────────────────
-
-const COMMUTE_DATA: Record<string, CommuteTimeResult> = {
-  prop_001: { commuteMinutes: 18 },
-  prop_002: { commuteMinutes: 25 },
-  prop_003: { commuteMinutes: 12 },
-  prop_004: { commuteMinutes: 35 },
-  prop_005: { commuteMinutes: 28 },
-};
-
-// ─── Mock Price History ───────────────────────────────────────────────────────
-
-const PRICE_HISTORY_DATA: Record<string, PriceHistoryResult> = {
-  prop_001: { fiveYearGrowthPercent: 42, appreciationTrend: "Strong" },
-  prop_002: { fiveYearGrowthPercent: 38, appreciationTrend: "Strong" },
-  prop_003: { fiveYearGrowthPercent: 21, appreciationTrend: "Moderate" },
-  prop_004: { fiveYearGrowthPercent: 29, appreciationTrend: "Moderate" },
-  prop_005: { fiveYearGrowthPercent: 11, appreciationTrend: "Slow" },
-};
-
-// ─── Lookup Helpers ───────────────────────────────────────────────────────────
-
-/** Find which mock property id matches an address string */
-function findIdByAddress(address: string): string | undefined {
-  const normalized = address.toLowerCase().trim();
-  return MOCK_LISTINGS.find((p) =>
-    p.address.toLowerCase().includes(normalized.substring(0, 15))
-  )?.id;
+function verifyDatasetsLoaded(): void {
+  if (!MOCK_LISTINGS || !Array.isArray(MOCK_LISTINGS)) {
+    throw new Error("Failed to load properties dataset.");
+  }
+  if (!NEIGHBORHOOD_DATA || !Array.isArray(NEIGHBORHOOD_DATA)) {
+    throw new Error("Failed to load neighborhoods dataset.");
+  }
+  if (!COMMUTE_DATA || !Array.isArray(COMMUTE_DATA)) {
+    throw new Error("Failed to load commute dataset.");
+  }
+  if (!PRICE_HISTORY_DATA || !Array.isArray(PRICE_HISTORY_DATA)) {
+    throw new Error("Failed to load price history dataset.");
+  }
 }
 
-export function getMockNeighborhoodInfo(address: string): NeighborhoodInfo {
-  const id = findIdByAddress(address);
-  if (id && NEIGHBORHOOD_DATA[id]) return NEIGHBORHOOD_DATA[id];
-  // Fallback: generate plausible random-ish data
-  return {
-    schoolRating: 7,
-    crimeLevel: "Moderate",
-    walkabilityScore: 68,
-    nearbyParks: 3,
-    groceryStores: 3,
-  };
-}
-
-export function getMockCommuteTime(address: string): CommuteTimeResult {
-  const id = findIdByAddress(address);
-  if (id && COMMUTE_DATA[id]) return COMMUTE_DATA[id];
-  return { commuteMinutes: 22 };
-}
-
-export function getMockPriceHistory(address: string): PriceHistoryResult {
-  const id = findIdByAddress(address);
-  if (id && PRICE_HISTORY_DATA[id]) return PRICE_HISTORY_DATA[id];
-  return { fiveYearGrowthPercent: 25, appreciationTrend: "Moderate" };
-}
-
-/** Filter mock listings by search criteria */
 export function filterMockListings(
   city: string,
-  budget: number,
-  bedrooms: number
+  minPrice?: number,
+  maxPrice?: number,
+  bedrooms?: number,
+  bathrooms?: number,
+  propertyType?: string
 ): PropertyListing[] {
-  return MOCK_LISTINGS.filter((p) => {
-    const cityMatch = p.address.toLowerCase().includes(city.toLowerCase());
-    const budgetMatch = p.price <= budget;
-    const bedroomMatch = p.bedrooms >= bedrooms;
-    return cityMatch && budgetMatch && bedroomMatch;
+  verifyDatasetsLoaded();
+
+  if (!city) {
+    throw new Error("City parameter is required for searching listings.");
+  }
+
+  const results = MOCK_LISTINGS.filter((p) => {
+    if (city && p.city && !p.city.toLowerCase().includes(city.toLowerCase())) return false;
+    if (minPrice !== undefined && minPrice !== null && p.listingPrice < minPrice) return false;
+    if (maxPrice !== undefined && maxPrice !== null && p.listingPrice > maxPrice) return false;
+    if (bedrooms !== undefined && bedrooms !== null && p.bedrooms < bedrooms) return false;
+    if (bathrooms !== undefined && bathrooms !== null && p.bathrooms < bathrooms) return false;
+    if (
+      propertyType &&
+      propertyType.toLowerCase() !== "any" &&
+      !p.propertyType.toLowerCase().includes(propertyType.toLowerCase())
+    ) {
+      return false;
+    }
+    return true;
   });
+
+  if (results.length === 0) {
+    throw new Error("No property listings found matching the specified filters.");
+  }
+
+  const sorted = [...results]
+    .sort((a, b) => {
+      if (maxPrice !== undefined && maxPrice !== null) {
+        return b.listingPrice - a.listingPrice; // Closest to max budget first
+      }
+      return a.listingPrice - b.listingPrice; // Cheapest first
+    })
+    .slice(0, 15);
+
+  return sorted.map((p) => ({
+    id: p.id,
+    address: p.address,
+    city: p.city,
+    propertyType: p.propertyType,
+    bedrooms: p.bedrooms,
+    bathrooms: p.bathrooms,
+    listingPrice: p.listingPrice,
+    squareFeet: p.squareFeet,
+  } as unknown as PropertyListing));
+}
+
+export function getFullPropertyDetails(propertyId: string): PropertyListing {
+  verifyDatasetsLoaded();
+  const prop = MOCK_LISTINGS.find((p) => p.id === propertyId);
+  if (!prop) {
+    throw new Error(`Property ID ${propertyId} not found.`);
+  }
+  return prop;
+}
+
+export function getMockNeighborhoodInfo(propertyId: string): NeighborhoodInfo {
+  verifyDatasetsLoaded();
+  if (!propertyId) {
+    throw new Error("Property ID is required.");
+  }
+  const info = NEIGHBORHOOD_DATA.find((n) => n.propertyId === propertyId);
+  if (!info) {
+    throw new Error(`Invalid property ID: ${propertyId}. No neighborhood data found.`);
+  }
+  return info;
+}
+
+export function getMockCommuteTime(propertyId: string): CommuteTimeResult {
+  verifyDatasetsLoaded();
+  if (!propertyId) {
+    throw new Error("Property ID is required.");
+  }
+  const info = COMMUTE_DATA.find((c) => c.propertyId === propertyId);
+  if (!info) {
+    throw new Error(`Invalid property ID: ${propertyId}. No commute data found.`);
+  }
+  return info;
+}
+
+export function getMockPriceHistory(propertyId: string): PriceHistoryResult {
+  verifyDatasetsLoaded();
+  if (!propertyId) {
+    throw new Error("Property ID is required.");
+  }
+  const info = PRICE_HISTORY_DATA.find((p) => p.propertyId === propertyId);
+  if (!info) {
+    throw new Error(`Invalid property ID: ${propertyId}. No price history data found.`);
+  }
+  return info;
 }

@@ -20,50 +20,78 @@ export type Priority =
 
 export interface SearchListingsInput {
   city: string;
-  budget: number;
-  bedrooms: number;
+  minPrice?: number;
+  maxPrice?: number;
+  bedrooms?: number;
+  bathrooms?: number;
+  propertyType?: string;
 }
 
 export interface NeighborhoodInfoInput {
-  address: string;
+  propertyId: string;
 }
 
 export interface CommuteTimeInput {
-  address: string;
+  propertyId: string;
 }
 
 export interface PriceHistoryInput {
-  address: string;
+  propertyId: string;
 }
 
-// ─── Tool Outputs ─────────────────────────────────────────────────────────────
+// ─── Dataset Interfaces ──────────────────────────────────────────────────────
 
 export interface PropertyListing {
   id: string;
   address: string;
-  price: number;
+  city: string;
+  state: string;
+  zipCode: string;
+  latitude: number;
+  longitude: number;
+  propertyType: string;
   bedrooms: number;
   bathrooms: number;
   squareFeet: number;
-  imageUrl: string;
-  propertyType: string;
+  lotSizeAcres: number;
+  yearBuilt: number;
+  listingPrice: number;
+  estimatedValue: number;
+  hoaFee: number;
+  parkingSpaces: number;
+  daysOnMarket: number;
+  description: string;
 }
 
 export interface NeighborhoodInfo {
-  schoolRating: number; // 1–10
-  crimeLevel: "Low" | "Moderate" | "High";
-  walkabilityScore: number; // 0–100
-  nearbyParks: number;
+  propertyId: string;
+  schoolRating: number;
+  crimeLevel: string;
+  walkability: number;
+  transitScore: number;
+  parksNearby: number;
   groceryStores: number;
+  restaurantsNearby: number;
+  hospitalDistanceKm: number;
+  internet: string;
+  noiseLevel: string;
+  medianHouseholdIncome: number;
 }
 
 export interface CommuteTimeResult {
-  commuteMinutes: number;
+  propertyId: string;
+  downtownMinutes: number;
+  airportMinutes: number;
+  businessDistrictMinutes: number;
+  universityMinutes: number;
 }
 
 export interface PriceHistoryResult {
+  propertyId: string;
   fiveYearGrowthPercent: number;
-  appreciationTrend: "Strong" | "Moderate" | "Slow";
+  averageAnnualGrowthPercent: number;
+  trend: string;
+  investmentRating: string;
 }
 
 // ─── Ranked Result ────────────────────────────────────────────────────────────
@@ -83,4 +111,28 @@ export interface AgentResponse {
   recommendations: RankedProperty[];
   summary: string;
   error?: string;
+}
+
+export interface ChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  recommendations?: RankedProperty[];
+}
+
+export interface ChatAgentRequest {
+  messages: {
+    role: "user" | "assistant" | "tool" | "system";
+    content: string | null;
+    tool_calls?: {
+      id: string;
+      type: "function";
+      function: {
+        name: string;
+        arguments: string;
+      };
+    }[];
+    tool_call_id?: string;
+  }[];
+  currentPreferences: SearchFormData;
 }
