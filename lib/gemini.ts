@@ -53,6 +53,7 @@ export async function callGemini(
             functionCall: {
               name: tc.function.name,
               args: JSON.parse(tc.function.arguments),
+              thoughtSignature: "skip_thought_signature_validator",
             },
           });
         }
