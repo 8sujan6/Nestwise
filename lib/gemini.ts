@@ -7,6 +7,7 @@ export interface GeminiToolCall {
     name: string;
     arguments: string;
   };
+  thoughtSignature?: string | null;
 }
 
 export interface GeminiMessage {
@@ -53,8 +54,8 @@ export async function callGemini(
             functionCall: {
               name: tc.function.name,
               args: JSON.parse(tc.function.arguments),
-              thoughtSignature: "skip_thought_signature_validator",
             },
+            thoughtSignature: tc.thoughtSignature || "skip_thought_signature_validator",
           });
         }
       }
@@ -122,18 +123,24 @@ export async function callGemini(
     },
   });
 
-  const toolCalls =
-    response.functionCalls?.map((fc) => {
-      const callId = `call_${Math.random().toString(36).substring(7)}`;
-      return {
-        id: callId,
-        type: "function" as const,
-        function: {
-          name: fc.name || "",
-          arguments: JSON.stringify(fc.args),
-        },
-      };
-    }) || [];
+  const toolCalls: GeminiToolCall[] = [];
+  const candidate = response.candidates?.[0];
+  if (candidate?.content?.parts) {
+    for (const part of candidate.content.parts) {
+      if (part.functionCall) {
+        const callId = `call_${Math.random().toString(36).substring(7)}`;
+        toolCalls.push({
+          id: callId,
+          type: "function" as const,
+          function: {
+            name: part.functionCall.name || "",
+            arguments: JSON.stringify(part.functionCall.args || {}),
+          },
+          thoughtSignature: (part as any).thoughtSignature || (part.functionCall as any).thoughtSignature || null,
+        });
+      }
+    }
+  }
 
   return {
     role: "assistant",
