@@ -2,73 +2,79 @@
 
 An autonomous, conversational AI agent that helps home buyers discover, analyze, and rank real estate properties in Texas (Austin, Dallas, Houston, and San Antonio) based on personalized preferences, neighborhood data, and commute constraints. 
 
-Powered by **Next.js** and **Google Gemini (gemini-2.5-flash)** function calling.
+Powered by **Next.js** and **Google Gemini (gemini-3.1-flash-lite)**.
 
 ---
 
 ## 1. System Architecture & Flow
 
-The application follows the architecture below, separating LLM reasoning from the data ingestion layer and optimizing context token limits.
+The application runs a stateful **ReAct (Reasoning and Action)** loop inside a Next.js serverless function, separating LLM reasoning from the database layer while optimizing context token usage.
 
 ```mermaid
 graph TD
-    User([User Preferences Form]) --> API[API Route: app/api/agent/route.ts]
+    User([User Chat / UI]) --> API[API Route: /api/agent]
     API --> TokenCheck[Token Limit Safeguards: lib/tokenHelper.ts]
     TokenCheck --> LLM[Gemini LLM Client: lib/gemini.ts]
     LLM -->|Autonomous Choice| Loop{Function Calling Loop}
-    Loop -->|search_listings| DL[Data Layer: lib/mockData.ts]
-    Loop -->|get_neighborhood_info| DL
-    Loop -->|get_commute_time| DL
-    Loop -->|get_price_history| DL
-    DL -->|Tool Results| LLM
-    LLM -->|Ranked Shortlist JSON| Enrichment[Backend Enrichment: Merge full specifications]
-    Enrichment --> Response([Frontend UI Rendering])
+    Loop -->|search_listings| DB[Mock DB: lib/mockData.ts]
+    Loop -->|get_neighborhood_info| DB
+    Loop -->|get_commute_time| DB
+    Loop -->|get_price_history| DB
+    DB -->|Tool Results| LLM
+    LLM -->|Ranked Shortlist JSON| Enrichment[Backend Enrichment: Hydrate full details]
+    Enrichment --> Response([UI Property Card Rendering])
 ```
 
 ---
 
-## 2. Technical Design & Short Write-up
+## 2. Live vs. Mocked Data (Stated Plainly)
 
-### Approach & Core Engine
-The agent uses a Next.js API route that coordinates a multi-turn, autonomous function-calling loop. When a user submits preferences, the agent starts by querying the listings database. It then dynamically decides which properties to look up depending on the user's priorities (e.g., fetching school ratings only for listings it wants to evaluate, checking commute times for matching candidate coordinates). 
+To ensure full transparency, the data boundaries of this project are outlined below:
 
-### How Ranking Works
-Instead of using a rigid, hardcoded scoring formula (which fails to capture human trade-offs), the ranking is done entirely through **LLM reasoning**. The model weighs conflicting signals (e.g., a property with excellent schools but a longer commute vs. one with a lower price but higher crime) against the user's explicit priority rank. Every recommendation includes a structured justification split into three components:
-1. **Selection**: Why the property fits the core criteria.
-2. **Trade-offs**: Highlights any downsides or caveats.
-3. **Comparison**: Explains why it ranked higher than the properties below it.
+### 🔴 Mocked Components (Data Layer)
+To maintain project independence and avoid external rate-limits or subscription fees, all data tables are stored locally in [mockData.ts](file:///b:/Antigravity/Digitomics/property-agent/lib/mockData.ts):
+* **Property Listings**: All house attributes, coordinates, listing prices, and descriptions are simulated properties located in Austin, Houston, Dallas, and San Antonio.
+* **Commute Times**: Calculations measuring travel times between the property coordinates and the user's work address coordinates are mocked based on distance vectors.
+* **Neighborhood Metrics**: Quality indicators (walkability, crime index, school ratings) are mocked static statistics mapped to property IDs.
+* **Price History**: Property pricing growth charts and investment tiers are generated locally.
 
-### Token Optimization & Context Management
-To stay within Gemini's token limits and protect response latency:
-* **Backend Data Enrichment**: The search tool only returns minimal property specs (e.g., ID, price, bed/bath count, square footage) during the LLM loop. Once the LLM decides on its final shortlist, the backend enriches the recommendations with full specifications (descriptions, lot sizes, HOA fees) from the local database before serving the client.
-* **Sliding Window History**: The loop prunes intermediate tool payloads, retaining only the system instructions, original request, and the most recent tool interactions.
-
-### Future Improvements
-1. **Live MLS Sync**: Connect the data layer to actual MLS API feeds (e.g., Bridge Interactive or RentCast) for live inventory.
-2. **Vector RAG on Descriptions**: Use embeddings to search semantic keywords (e.g., "shaded backyard" or "vaulted ceilings") in property descriptions.
+### 🟢 Live Components (AI & Infrastructure)
+* **LLM Engine**: Runs live API calls directly to Google Gemini's production servers using the official `@google/genai` client.
+* **Agent Reasoning**: The multi-turn ReAct loops, tool decisions, property shortlisting, and comparative text generation are computed live by the model.
+* **Serverless Execution**: Hosted live on Vercel, coordinating server-side execution of the loops.
 
 ---
 
-## 3. Getting Started
+## 3. Honest Write-up of Trade-offs
+
+During development, several technical trade-offs were made:
+
+### 1. Model Class: Stable Lite Model vs. High-Tier Models
+* **Trade-off**: We switched from `gemini-2.5-flash` / `gemini-3.5-flash` to **`gemini-3.1-flash-lite`**.
+* **Rationale**: While higher-tier models offer marginal increases in reasoning capabilities, their free-tier usage is capped at an extremely low **20 requests per day** or frequently returns **503/500 service overloads**. Since each agent search requires 4-5 tool calling request cycles, a single user session would exhaust the higher-tier limits in 3-4 searches. `gemini-3.1-flash-lite` operates stably with **1,500 requests per day** and **15 requests per minute**, ensuring the app remains fully responsive for evaluators.
+
+### 2. Token Limit Safeguards vs. Latency
+* **Trade-off**: Limiting tool payloads to minimal fields during search, then hydrating them afterwards on the server.
+* **Rationale**: Property descriptions are token-heavy. If we pass the full descriptions of all matching search results to the LLM context, it increases request costs and slows down response times. We chose to return only property IDs, prices, and dimensions during the LLM loop. The backend automatically enriches the selected shortlist with full descriptions on the web server *after* the agent finishes its turns.
+
+### 3. Google SDK Integration vs. Strict Validation
+* **Trade-off**: Bypassing Google's Thought Signature validation.
+* **Rationale**: Gemini 2.0+ models require preceding `functionCall` steps in conversation history to preserve a `thoughtSignature` token generated on previous turns. Because the web application stores history in an open-standard OpenAI message format, it loses this metadata. We resolved this by injecting the bypass value `"thoughtSignature": "skip_thought_signature_validator"` at the part-level inside [gemini.ts](file:///b:/Antigravity/Digitomics/property-agent/lib/gemini.ts#L56), allowing history to restore cleanly without API validation crashes.
+
+---
+
+## 4. Getting Started
 
 ### 1. Environment Setup
-
 Create a `.env.local` file in the root directory and add your Gemini API key:
-
 ```env
 GEMINI_API_KEY=AIzaSy...
-GEMINI_MODEL=gemini-2.5-flash
 ```
+*(No other variables are required; the system defaults to the stable `gemini-3.1-flash-lite` model fallback).*
 
-*Note: No other external API keys are required.*
-
-### 2. Run the Development Server
-
-Install dependencies and start the local Next.js dev server:
-
+### 2. Install and Run Locally
 ```bash
 npm install
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to test the agent interface.
+Open [http://localhost:3000](http://localhost:3000) in your browser to start searching.
