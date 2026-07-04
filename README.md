@@ -2,7 +2,7 @@
 
 An autonomous, conversational AI agent that helps home buyers discover, analyze, and rank real estate properties in Texas (Austin, Dallas, Houston, and San Antonio) based on personalized preferences, neighborhood data, and commute constraints. 
 
-Powered by **Next.js** and **Groq (llama-3.1-8b-instant)** function calling.
+Powered by **Next.js** and **Google Gemini (gemini-2.5-flash)** function calling.
 
 ---
 
@@ -14,7 +14,7 @@ The application follows the architecture below, separating LLM reasoning from th
 graph TD
     User([User Preferences Form]) --> API[API Route: app/api/agent/route.ts]
     API --> TokenCheck[Token Limit Safeguards: lib/tokenHelper.ts]
-    TokenCheck --> LLM[Groq LLM Client: lib/groq.ts]
+    TokenCheck --> LLM[Gemini LLM Client: lib/gemini.ts]
     LLM -->|Autonomous Choice| Loop{Function Calling Loop}
     Loop -->|search_listings| DL[Data Layer: lib/mockData.ts]
     Loop -->|get_neighborhood_info| DL
@@ -39,7 +39,7 @@ Instead of using a rigid, hardcoded scoring formula (which fails to capture huma
 3. **Comparison**: Explains why it ranked higher than the properties below it.
 
 ### Token Optimization & Context Management
-To stay within Groq's token limits and protect response latency:
+To stay within Gemini's token limits and protect response latency:
 * **Backend Data Enrichment**: The search tool only returns minimal property specs (e.g., ID, price, bed/bath count, square footage) during the LLM loop. Once the LLM decides on its final shortlist, the backend enriches the recommendations with full specifications (descriptions, lot sizes, HOA fees) from the local database before serving the client.
 * **Sliding Window History**: The loop prunes intermediate tool payloads, retaining only the system instructions, original request, and the most recent tool interactions.
 
@@ -53,11 +53,11 @@ To stay within Groq's token limits and protect response latency:
 
 ### 1. Environment Setup
 
-Create a `.env.local` file in the root directory and add your Groq API key:
+Create a `.env.local` file in the root directory and add your Gemini API key:
 
 ```env
-GROQ_API_KEY=gsk_...
-GROQ_MODEL=llama-3.1-8b-instant
+GEMINI_API_KEY=AIzaSy...
+GEMINI_MODEL=gemini-2.5-flash
 ```
 
 *Note: No other external API keys are required.*

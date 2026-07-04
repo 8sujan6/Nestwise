@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { callGroq, GroqMessage } from "@/lib/groq";
+import { callGemini, GeminiMessage } from "@/lib/gemini";
 import { toolDeclarations } from "@/lib/tools";
 import { SYSTEM_PROMPT } from "@/lib/prompts";
 import {
@@ -120,7 +120,7 @@ export async function POST(req: NextRequest) {
           return;
         }
 
-        const history: GroqMessage[] = [
+        const history: GeminiMessage[] = [
           { role: "system", content: SYSTEM_PROMPT },
           ...messages,
         ];
@@ -134,19 +134,22 @@ export async function POST(req: NextRequest) {
         while (iterations < MAX_ITERATIONS) {
           iterations++;
 
-          const messagesToSend: GroqMessage[] = [];
+          const messagesToSend: GeminiMessage[] = [];
           if (history.length > 0) {
             messagesToSend.push(history[0]);
           }
+          if (history.length > 1) {
+            messagesToSend.push(history[1]);
+          }
 
           const recentCount = 24;
-          const startIdx = Math.max(1, history.length - recentCount);
+          const startIdx = Math.max(2, history.length - recentCount);
           for (let i = startIdx; i < history.length; i++) {
             messagesToSend.push(history[i]);
           }
 
           validateRequestSize(messagesToSend, toolDeclarations);
-          const message = await callGroq(messagesToSend, toolDeclarations);
+          const message = await callGemini(messagesToSend, toolDeclarations);
 
           history.push({
             role: "assistant",

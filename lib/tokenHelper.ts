@@ -1,4 +1,4 @@
-import { GroqMessage } from "./groq";
+import { GeminiMessage } from "./gemini";
 
 /**
  * Estimates the token count of a given string using character-based approximation.
@@ -12,7 +12,7 @@ export function estimateTextTokens(text: string): number {
  * Estimates total tokens for the messages list and the tools declarations array.
  */
 export function estimateRequestTokens(
-  messages: GroqMessage[],
+  messages: GeminiMessage[],
   tools?: unknown[]
 ): number {
   return estimateTextTokens(JSON.stringify(messages)) + (tools ? estimateTextTokens(JSON.stringify(tools)) : 0);
@@ -20,25 +20,25 @@ export function estimateRequestTokens(
 
 
 /**
- * Validates request size. Logs warning if above 3500 tokens, throws if above 5000 tokens.
+ * Validates request size. Logs warning if above 15000 tokens, throws if above 30000 tokens.
  */
 export function validateRequestSize(
-  messages: GroqMessage[],
+  messages: GeminiMessage[],
   tools?: unknown[]
 ): number {
   const estimatedTokens = estimateRequestTokens(messages, tools);
 
   console.log(`[Token Usage] Estimated request size: ${estimatedTokens} tokens.`);
 
-  if (estimatedTokens > 5000) {
+  if (estimatedTokens > 30000) {
     throw new Error(
-      `Request blocked: Estimated token count of ${estimatedTokens} exceeds the safety threshold of 5,000 tokens.`
+      `Request blocked: Estimated token count of ${estimatedTokens} exceeds the safety threshold of 30,000 tokens.`
     );
   }
 
-  if (estimatedTokens > 3500) {
+  if (estimatedTokens > 15000) {
     console.warn(
-      `[Token Warning] Request size (${estimatedTokens} tokens) is approaching the 4,000 token limit.`
+      `[Token Warning] Request size (${estimatedTokens} tokens) is approaching the 30,000 token limit.`
     );
   }
 

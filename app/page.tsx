@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import SearchForm from "@/components/SearchForm";
 import RecommendationList from "@/components/RecommendationList";
 import { SearchFormData, AgentResponse, ChatMessage } from "@/lib/types";
-import { GroqMessage } from "@/lib/groq";
+import { GeminiMessage } from "@/lib/gemini";
 import {
   filterMockListings,
   getMockNeighborhoodInfo,
@@ -71,7 +71,7 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [loadingStatus, setLoadingStatus] = useState("");
   const [chatHistory, setChatHistory] = useState<ChatMessage[]>([]);
-  const [rawHistory, setRawHistory] = useState<GroqMessage[]>([]);
+  const [rawHistory, setRawHistory] = useState<GeminiMessage[]>([]);
   const [filterRecommendations, setFilterRecommendations] = useState<AgentResponse | null>(null);
   const [chatRecommendations, setChatRecommendations] = useState<AgentResponse | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -112,7 +112,7 @@ export default function HomePage() {
     });
     setChatHistory(newChatHistory);
 
-    const nextRawHistory = [...rawHistory, { role: "user", content: userText } as GroqMessage];
+    const nextRawHistory = [...rawHistory, { role: "user", content: userText } as GeminiMessage];
     setRawHistory(nextRawHistory);
 
     try {
@@ -157,12 +157,17 @@ export default function HomePage() {
               if (parsed.data.error) {
                 setErrorMessage(parsed.data.error);
               } else {
-                const responseData: AgentResponse & { history?: GroqMessage[] } = parsed.data;
-                setChatRecommendations({
-                  recommendations: responseData.recommendations,
-                  summary: responseData.summary,
-                  error: responseData.error,
-                });
+                const responseData: AgentResponse & { history?: GeminiMessage[] } = parsed.data;
+                 setChatRecommendations((prev) => {
+                   const newRecs = responseData.recommendations && responseData.recommendations.length > 0
+                     ? responseData.recommendations
+                     : (prev?.recommendations || []);
+                   return {
+                     recommendations: newRecs,
+                     summary: responseData.summary,
+                     error: responseData.error,
+                   };
+                 });
 
                 if (responseData.history) {
                   setRawHistory(responseData.history);
