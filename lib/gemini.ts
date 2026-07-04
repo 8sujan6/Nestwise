@@ -114,7 +114,7 @@ export async function callGemini(
       : undefined;
 
   const response = await ai.models.generateContent({
-    model: process.env.GEMINI_MODEL || "gemini-flash-latest",
+    model: "gemini-flash-latest",
     contents,
     config: {
       systemInstruction: systemInstruction || undefined,
